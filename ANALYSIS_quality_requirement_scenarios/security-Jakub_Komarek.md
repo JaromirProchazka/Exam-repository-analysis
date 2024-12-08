@@ -1,4 +1,4 @@
-# Security Scenario -- Grade modification nonrepudiation
+# Security Scenario -- Grade Modification Nonrepudiation
 
 A teacher (inside attacker) makes unauthorized changes to student grades
 in the Examination system. It must not be possible for the attacker to plausibly
