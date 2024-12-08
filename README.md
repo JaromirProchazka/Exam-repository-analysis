@@ -1,3 +1,7 @@
+# Exam System Analysis
+
+This forks purpose is to analyse the Exam module for given scenarios and quality requirements. It is done by the Schedule team.
+
 # Exam System
 
 ## Core features and responsibilities
