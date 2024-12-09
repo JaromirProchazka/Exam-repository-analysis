@@ -6,8 +6,6 @@ deny making the changes (nonrepudiation).
 
 ## Solution
 
-Add a Grade modifications history component to Awarding grade service.
+Add a Grade modifications audit trail component to Awarding grade service.
 The responsibility of this module would be to keep the complete history
 of awarded grades (together with the teacher who awarded them).
-The Review grades controller should then use this history component
-to find the most recently awarded grade.
