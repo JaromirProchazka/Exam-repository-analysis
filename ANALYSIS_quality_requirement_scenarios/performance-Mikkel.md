@@ -1,30 +1,20 @@
-# Performance Analysis of the Student Registration System
-
+# Performance Analysis for Room Reservation System
 
 ## Scenario:
-- At the start of each semester, a large number of students register for courses simultaneously.
-- The registration system should be able to handle the peak load of students registering for their courses without performance degradation.
-- **Requirement**: The system must handle 5000 simultaneous course registrations with an average response time of less than 3 seconds.
+- During exam periods, multiple teachers need to access and view available rooms to schedule their exams. Teachers should be able to retrieve room availability and reservation details efficiently, even when many users are simultaneously interacting with the system.
+- **Requirement**: The system must be able to handle 100 teachers viewing room availability at the same time, with an average response time of less than 2 seconds for retrieving room details.
 
-## Scenario
-- **Source of Stimulus**: Student.  
-- **Stimulus**: Attempts to register for a course at the beginning of the semester.  
-- **Artifact**: Student Registration System.  
-- **Environment**: High-traffic period with 5000 simultaneous registration attempts.  
-- **Response**: The system processes all registration requests efficiently and provides feedback within the required time.  
-- **Measure**: The system achieves an average response time of less than 3 seconds for 5000 simultaneous registrations.
+
+## Scenario Breakdown:
+- **Source of Stimulus**: Teacher.  
+- **Stimulus**: Teacher requests to view room reservation details.
+- **Artifact**: Room Reservation service.
+- **Environment**: High-traffic period, with 100 teachers accessing the system simultaneously.
+- **Response**: The system processes all requests and displays room details with minimal delays.
+- **Measure**: The system provides room reservation information with an average response time of less than 2 seconds for 100 simultaneous teacher requests.
 
 
 ## Solution:
-1. **Improved Algorithms**:  
-   - Improve the algorithms used for course registration, to reduce computation time and speed up the registration process.
-
-2. **Concurrent Processing**:
-    - Implement concurrent processing to handle multiple course registrations simultaneously, improving the system's throughput and response time.
-
-3. **Resource Scaling**:
-    - Scale up the system resources (e.g., CPU, memory, network) to handle the peak load of course registrations efficiently. This can involve upgrading hardware components or utilizing cloud hosting services.
-
-5. **Caching**:  
-   - Cache frequently accessed data to reduce the number of database queries and improve response times during high-traffic periods.
+**Caching Room Data**:
+   - Cache frequently accessed room details (e.g., availability, capacity) to minimize the load on the database and reduce the time it takes to retrieve room information.
 
