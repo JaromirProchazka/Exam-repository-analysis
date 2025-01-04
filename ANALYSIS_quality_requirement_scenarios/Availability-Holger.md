@@ -17,3 +17,7 @@
 - **Availability**: The system continues to accept and queue registration requests even when the database is down.  
 - **Data Integrity**: The system ensures that no registration requests are lost during database outages.  
 - **User Experience**: Students are immediately notified of successful registration, reducing anxiety or confusion during peak usage.  
+
+## **Implementation**
+This scenario have been chosen to be implemented, but in a more general way. This scenario also works if the database 
+breaks or timeouts. 

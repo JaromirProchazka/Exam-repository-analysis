@@ -1,20 +1,42 @@
-# Scenario
-Viewing exam results may experience high traffic when all students try to access their results simultaneously.
+# **Quality Requirement Scenario: Viewing Exam Results During High Traffic**
 
-## Solution
+## **Stimulus**
+- A sudden surge of simultaneous requests to view exam results when they are released to all students.
 
-### X-axis Scaling
-- **Horizontal Scaling**: Leverage a microservices architecture that allows the system to scale horizontally 
-by adding more service instances during peak times.
-- **API Gateway**: Use the API Gateway to efficiently distribute requests to different service instances, 
-ensuring even traffic distribution.
+## **Source of Stimulus**
+- Students accessing the results portal simultaneously.
 
-### Shared Database
-- **Database Partitioning**: Split the exam result data into logical partitions based on criteria like student ID ranges, 
-course IDs. Each partition will store results for a subset of students, 
-reducing the load on any single database instance.
-- **Improved Performance**: This approach reduces the contention on database resources, allowing for faster query responses 
-by ensuring that requests are evenly distributed across different partitions.
-- **Scalability**: With database partitioning, as the number of students grows, new partitions can be added, 
-allowing the system to scale more efficiently without significant impact on performance. 
+## **Environment**
+- The system is under peak load during the results release period.
+- The infrastructure is operational, but resources are heavily utilized.
+
+## **Artifact**
+- Exam Results Microservice (includes API Gateway, microservice instances, and database).
+- Shared Database (partitioned for scalability).
+
+## **Response**
+
+### **X-Axis Scaling (Horizontal Scaling)**
+1. **Microservices Architecture**:
+   - The system uses microservices to handle requests, allowing for independent scaling.
+
+2. **API Gateway**:
+   - Directs requests to multiple service instances, ensuring even load distribution.
+
+### **Database Partitioning**
+1. **Logical Partitioning**:
+   - Student data is split into multiple partitions (e.g., based on student ID ranges or course IDs).
+
+2. **Performance Optimization**:
+   - Requests are routed to the appropriate partition, reducing contention and enabling faster query execution.
+
+3. **Scalable Storage**:
+   - New partitions are added as the number of students grows, ensuring continued scalability.
+
+## **Response Measures**
+Keeping the average response time for viewing result as low as possible <= 5 seconds.
+
+
+## **Implementation**
+We have chosen to implement the horizontal scaling to solve this problem. 
 
