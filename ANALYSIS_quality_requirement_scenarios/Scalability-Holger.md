@@ -39,4 +39,6 @@ Keeping the average response time for viewing result as low as possible <= 5 sec
 
 ## **Implementation**
 We have chosen to implement the horizontal scaling to solve this problem. 
+since the horizontal scaling means that a container can run in multiple instances it does not requrie large changes to the c4 model. 
+As I am not adding anything new th the c4 model.
 
