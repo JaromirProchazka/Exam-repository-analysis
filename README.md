@@ -1,6 +1,10 @@
 # Exam System Analysis
 
-This forks purpose is to analyse the Exam module for given scenarios and quality requirements. It is done by the Schedule team.
+This forks purpose is to analyse the Exam module for given scenarios and quality requirements. 
+It is done by the Schedule team in winter semester 2024/25 on Charles University in course NSWI130 - Software System Architectures.
+All materials created for the analysis are in the **ANALYSIS_quality_requirement_scenarions** folder in the root of this repo.
+
+The rest of this repository including the rest of this README were made by the Exam team in Milestone 1.
 
 # Exam System
 
