@@ -31,4 +31,5 @@ Exam-repository: https://github.com/Metalystn/Exam-repository/tree/main
 ### Aditional notes:
 
 - As-is Exam module also stores data about room reservations for exams. Scheduling module will certainly need to access this data on a regular basis so it can use them together with data about room reservations for lectures. This should be resolved by merging these two reservation systems into one.
+
 - As-is Exam module also stores data about grades and courses, which must be accessible for all other modules as well.
