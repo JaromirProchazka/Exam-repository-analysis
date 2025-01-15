@@ -4,7 +4,16 @@ This forks purpose is to analyse the Exam module for given scenarios and quality
 It is done by the Schedule team in winter semester 2024/25 on Charles University in course NSWI130 - Software System Architectures.
 All materials created for the analysis are in the **ANALYSIS_quality_requirement_scenarions** folder in the root of this repo.
 
+There you can find
+
+- files with scenarios and there proposed solutions (2 for each team member)
+- `presentation/` folder with teams presentation from the last practical
+- `Updated C4 model/` folder with updated Exam system, it is updated with the proposed solutions of the scenarios (L2 and L3 diagrams)
+
+
 The rest of this repository including the rest of this README were made by the Exam team in Milestone 1.
+
+---
 
 # Exam System
 
