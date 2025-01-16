@@ -1,6 +1,6 @@
 # Performance scenario for Room Reservation System
 
-## Scenario Breakdown:
+## Scenario
 - **Source of Stimulus**: Teacher.  
 - **Stimulus**: Teacher requests to view room reservation details.
 - **Artifact**: Room Reservation service.
@@ -9,7 +9,7 @@
 - **Measure**: The system provides room reservation information with an average response time of less than 2 seconds for 100 simultaneous teacher requests.
 
 
-## Solution:
+## Solution
 **Caching Room Data**:
    - Cache frequently accessed room details (e.g., availability, capacity) to minimize the load on the database and reduce the time it takes to retrieve room information.
 
