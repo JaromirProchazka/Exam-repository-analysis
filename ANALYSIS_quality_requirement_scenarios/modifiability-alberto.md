@@ -11,7 +11,7 @@ A new grading policy is introduced, requiring the integration of a new "Policy A
 - **Artifact**: The overall system architecture, including existing services and the API Gateway.
 - **Respose**: The system should enable the seamless addition of the new service without requiring modifications to existing services or the API Gateway logic.
 - **Measure**: The integration process should take no more than 5 development days and must not disrupt the operation of existing services.
-- 
+
 ## Solution:
 
 - To achieve this, the system should adhere to modular design principles, with clearly defined interfaces for each service. The API Gateway should be designed to route requests dynamically based on configuration files or metadata rather than hardcoded logic.
