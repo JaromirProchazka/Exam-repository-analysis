@@ -1,4 +1,4 @@
-# Scenario: Availability for Credit Assignment
+# Availability for Credit Assignment
 
 ## Scenario
 - **Source of Stimulus**: Teacher.  
