@@ -2,40 +2,19 @@
 
 Exam-repository: https://github.com/Metalystn/Exam-repository/tree/main
 
-## Docs
-
-- Docs are provided in the C4 diagram in the [docs file](https://github.com/Metalystn/Exam-repository/blob/main/C4%20Model/C4-model-new.md)
-- this makes testability better since the team can easily understand bigger the structure
-- Although the docs only cover the Container level
-  - bad for testability, since the Containers are what is most likely being tested and their structure isn't documented
-
-## Overall testability
-
-- (how easily the system under the tests will give up its faults, test efforts, coverage of possible cases)
-- since micro services don't have their own databases but share one, they don't thus own their state, and it will be more difficult to monitor it
-- but the micro-services themselves provide good decomposition
-  - since there aren't any dependencies between the micro-services, this makes the input control good
-
 ## Scenario:
 
-- we want to test the Exam Registering
-  - that the roles of users are handled correctly (100% roles coverage)
-  - that only the students that are enrolled in the subject and ticket can register
-  - that the registration is reliable, it doesn't get lost
-
-### Observability
-
-- the state is saved to global database which is more difficult to monitor
-- the presence of other services, changing the databases state can make the testing less deterministic
-
-### System complexity
-
-- The registration is separated into its own 1 container with little dependencies on others
-  - simple to cover API possible calls
-- services are logicaly split to components that can be quite easily unit tested
-  - Eligibility Check component for the roles tests
+- *Source of Stimulus*: Developer
+- *Stimulus*: Attempts to test students register for for an exam reliability
+- *Artifact*: Exam Registering Service
+- *Environment*: Testing Environment
+- *Response*: System gives up tested users role and how the request changed the internal state
+- *Measure*: System easily gives up this information and enables 100 role coverage test
 
 ## Solution:
 
-- split the database into microservices databases
+- the senders requests must be logged for the tests to be run
+- we create a local request storage
+- the consequent change in the systems state is not easy to get because of the sharerd database
+- so we should split the data base to local microservices databases, where the changes can be easily monitored
 - create some logging mecahnism on each database to monitor state
