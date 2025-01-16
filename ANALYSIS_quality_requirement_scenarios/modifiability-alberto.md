@@ -3,7 +3,7 @@
 Exam-repository: https://github.com/Metalystn/Exam-repository/tree/main
 
 ## Scenario:
-***
+
 A new grading policy is introduced, requiring the integration of a new "Policy Adjustment Service" into the system.
 
 - **Source of stimulus**: System administrators or developers responsible for implementing policy updates.
@@ -13,6 +13,6 @@ A new grading policy is introduced, requiring the integration of a new "Policy A
 - **Measure**: The integration process should take no more than 5 development days and must not disrupt the operation of existing services.
 - 
 ## Solution:
-***
+
 - To achieve this, the system should adhere to modular design principles, with clearly defined interfaces for each service. The API Gateway should be designed to route requests dynamically based on configuration files or metadata rather than hardcoded logic.
 - Additionally using a microservices architecture with loosely coupled services ensures that adding a new service requires minimal changes to the rest of the system.
