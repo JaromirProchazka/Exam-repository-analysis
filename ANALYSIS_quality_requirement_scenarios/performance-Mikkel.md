@@ -1,9 +1,4 @@
-# Performance Analysis for Room Reservation System
-
-## Scenario:
-- During exam periods, multiple teachers need to access and view available rooms to schedule their exams. Teachers should be able to retrieve room availability and reservation details efficiently, even when many users are simultaneously interacting with the system.
-- **Requirement**: The system must be able to handle 100 teachers viewing room availability at the same time, with an average response time of less than 2 seconds for retrieving room details.
-
+# Performance scenario for Room Reservation System
 
 ## Scenario Breakdown:
 - **Source of Stimulus**: Teacher.  
