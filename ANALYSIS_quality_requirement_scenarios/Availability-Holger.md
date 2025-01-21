@@ -6,7 +6,7 @@
 - **Artifact**: Exam registration system, including the database and data access layer.  
 - **Environment**: Peak registration period, causing high traffic and potential database timeouts.  
 - **Response**: The system temporarily queues the registration requests and provides feedback to students, ensuring smooth operation despite high load.  
-- **Measure**: Registration requests are queued during peak periods, and students are notified of success without delay.  
+- **Measure**: No request is lost. 
 
 ## Solution 
 This scenario have been chosen to be implemented, but in a more general way. This scenario also works if the database 
